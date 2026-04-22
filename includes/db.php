@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost:3306';
-$db   = 'hr3';
-$user = 'root';
-$pass = '';
+$host = 'localhost';
+$db   = 'hr3_viahale';
+$user = 'hr3_viahale';
+$pass = 'pogi';
 $charset = 'utf8mb4';
 
 $options = [

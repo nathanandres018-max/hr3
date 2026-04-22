@@ -1,0 +1,170 @@
+[2026-02-25 04:41:45] Liveness verified: blinkCount=2, confidence=81.3%
+[2026-02-25 04:41:45] Unhandled exception: Unknown column 'face_template' in 'SELECT'
+#0 /home/hr3.viahale.com/public_html/admin/verify_attendance.php(110): mysqli->query()
+#1 {main}
+[2026-02-25 06:06:13] Liveness verified: blinkCount=105, confidence=68.2%
+[2026-02-25 06:06:13] Unhandled exception: Unknown column 'face_template' in 'SELECT'
+#0 /home/hr3.viahale.com/public_html/admin/verify_attendance.php(110): mysqli->query()
+#1 {main}
+[2026-02-25 06:13:51] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 06:13:51] Session user: HR3 Admin
+[2026-02-25 06:13:51] DB connection OK
+[2026-02-25 06:13:51] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 06:13:51] Descriptor length: 128
+[2026-02-25 06:13:51] Liveness verified: blinkCount=6, confidence=80%
+[2026-02-25 06:13:51] Encryption key available: yes
+[2026-02-25 06:13:51] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 06:13:51] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 06:13:51] Enrolled employees found: 7
+[2026-02-25 06:13:51] Checked: 7, Skipped: 0
+[2026-02-25 06:13:51] Best match: Ethan Bailey (EMP047), dist=0.37441151209287
+[2026-02-25 06:13:51] MATCHED: Ethan Bailey (EMP047), dist=0.37441151209287
+[2026-02-25 06:13:51] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 06:13:51] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 06:13:51] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 06:13:55] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 06:13:55] Session user: HR3 Admin
+[2026-02-25 06:13:55] DB connection OK
+[2026-02-25 06:13:55] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 06:13:55] Descriptor length: 128
+[2026-02-25 06:13:55] Liveness verified: blinkCount=10, confidence=75.8%
+[2026-02-25 06:13:55] Encryption key available: yes
+[2026-02-25 06:13:55] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 06:13:55] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 06:13:55] Enrolled employees found: 7
+[2026-02-25 06:13:55] Checked: 7, Skipped: 0
+[2026-02-25 06:13:55] Best match: Ethan Bailey (EMP047), dist=0.39638113009238
+[2026-02-25 06:13:55] MATCHED: Ethan Bailey (EMP047), dist=0.39638113009238
+[2026-02-25 06:13:55] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 06:13:55] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 06:13:55] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 06:15:25] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 06:15:25] Session user: HR3 Admin
+[2026-02-25 06:15:25] DB connection OK
+[2026-02-25 06:15:25] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 06:15:25] Descriptor length: 128
+[2026-02-25 06:15:25] Liveness verified: blinkCount=3, confidence=79.5%
+[2026-02-25 06:15:25] Encryption key available: yes
+[2026-02-25 06:15:25] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 06:15:25] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 06:15:25] Enrolled employees found: 7
+[2026-02-25 06:15:25] Checked: 7, Skipped: 0
+[2026-02-25 06:15:25] Best match: Ethan Bailey (EMP047), dist=0.22662780136352
+[2026-02-25 06:15:25] MATCHED: Ethan Bailey (EMP047), dist=0.22662780136352
+[2026-02-25 06:15:25] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 06:15:25] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 06:15:25] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 06:27:13] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 06:27:13] Session user: HR3 Admin
+[2026-02-25 06:27:13] DB connection OK
+[2026-02-25 06:27:13] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 06:27:13] Descriptor length: 128
+[2026-02-25 06:27:13] Liveness verified: blinkCount=4, confidence=95.2%
+[2026-02-25 06:27:13] Encryption key available: yes
+[2026-02-25 06:27:13] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 06:27:13] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 06:27:13] Enrolled employees found: 7
+[2026-02-25 06:27:13] Checked: 7, Skipped: 0
+[2026-02-25 06:27:13] Best match: Ethan Bailey (EMP047), dist=0.28573363985783
+[2026-02-25 06:27:13] MATCHED: Ethan Bailey (EMP047), dist=0.28573363985783
+[2026-02-25 06:27:13] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 06:27:13] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 06:27:13] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 06:27:16] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 06:27:16] Session user: HR3 Admin
+[2026-02-25 06:27:16] DB connection OK
+[2026-02-25 06:27:16] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 06:27:16] Descriptor length: 128
+[2026-02-25 06:27:16] Liveness verified: blinkCount=6, confidence=97.6%
+[2026-02-25 06:27:16] Encryption key available: yes
+[2026-02-25 06:27:16] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 06:27:16] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 06:27:16] Enrolled employees found: 7
+[2026-02-25 06:27:16] Checked: 7, Skipped: 0
+[2026-02-25 06:27:16] Best match: Ethan Bailey (EMP047), dist=0.2921271655631
+[2026-02-25 06:27:16] MATCHED: Ethan Bailey (EMP047), dist=0.2921271655631
+[2026-02-25 06:27:16] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 06:27:16] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 06:27:16] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 06:39:58] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 06:39:58] Session user: HR3 Admin
+[2026-02-25 06:39:58] DB connection OK
+[2026-02-25 06:39:58] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 06:39:58] Descriptor length: 128
+[2026-02-25 06:39:58] Liveness verified: blinkCount=2, confidence=96.7%
+[2026-02-25 06:39:58] Encryption key available: yes
+[2026-02-25 06:39:58] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 06:39:58] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 06:39:58] Enrolled employees found: 7
+[2026-02-25 06:39:58] Checked: 7, Skipped: 0
+[2026-02-25 06:39:58] Best match: Ethan Bailey (EMP047), dist=0.29162430591064
+[2026-02-25 06:39:58] MATCHED: Ethan Bailey (EMP047), dist=0.29162430591064
+[2026-02-25 06:39:58] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 06:39:58] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 06:39:58] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 07:05:34] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 07:05:34] Session user: HR3 Admin
+[2026-02-25 07:05:34] DB connection OK
+[2026-02-25 07:05:34] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 07:05:34] Descriptor length: 128
+[2026-02-25 07:05:34] Liveness verified: blinkCount=2, confidence=64.3%
+[2026-02-25 07:05:34] Encryption key available: yes
+[2026-02-25 07:05:34] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 07:05:34] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 07:05:34] Enrolled employees found: 7
+[2026-02-25 07:05:34] Checked: 7, Skipped: 0
+[2026-02-25 07:05:34] Best match: Ethan Bailey (EMP047), dist=0.25756327436922
+[2026-02-25 07:05:34] MATCHED: Ethan Bailey (EMP047), dist=0.25756327436922
+[2026-02-25 07:05:34] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 07:05:34] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 07:05:34] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 07:47:34] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 07:47:34] Session user: HR3 Admin
+[2026-02-25 07:47:34] DB connection OK
+[2026-02-25 07:47:34] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 07:47:34] Descriptor length: 128
+[2026-02-25 07:47:34] Liveness verified: blinkCount=3, confidence=84%
+[2026-02-25 07:47:34] Encryption key available: yes
+[2026-02-25 07:47:34] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 07:47:34] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 07:47:34] Enrolled employees found: 7
+[2026-02-25 07:47:34] Checked: 7, Skipped: 0
+[2026-02-25 07:47:34] Best match: Ethan Bailey (EMP047), dist=0.34868223352509
+[2026-02-25 07:47:34] MATCHED: Ethan Bailey (EMP047), dist=0.34868223352509
+[2026-02-25 07:47:34] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 07:47:34] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 07:47:34] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 08:05:09] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 08:05:09] Session user: HR3 Admin
+[2026-02-25 08:05:09] DB connection OK
+[2026-02-25 08:05:09] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 08:05:09] Descriptor length: 128
+[2026-02-25 08:05:09] Liveness verified: blinkCount=5, confidence=85%
+[2026-02-25 08:05:09] Encryption key available: yes
+[2026-02-25 08:05:09] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 08:05:09] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 08:05:09] Enrolled employees found: 7
+[2026-02-25 08:05:09] Checked: 7, Skipped: 0
+[2026-02-25 08:05:09] Best match: Ethan Bailey (EMP047), dist=0.28173364513558
+[2026-02-25 08:05:09] MATCHED: Ethan Bailey (EMP047), dist=0.28173364513558
+[2026-02-25 08:05:09] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 08:05:09] No shift today, checking yesterday (2026-02-24) for overnight shift...
+[2026-02-25 08:05:09] No shift assigned for EMP047 on 2026-02-25 or overnight from 2026-02-24
+[2026-02-25 08:08:12] === NEW ATTENDANCE REQUEST ===
+[2026-02-25 08:08:12] Session user: HR3 Admin
+[2026-02-25 08:08:12] DB connection OK
+[2026-02-25 08:08:12] Input keys: descriptor, image, isLive, blinkCount, confidence
+[2026-02-25 08:08:12] Descriptor length: 128
+[2026-02-25 08:08:12] Liveness verified: blinkCount=3, confidence=73.4%
+[2026-02-25 08:08:12] Encryption key available: yes
+[2026-02-25 08:08:12] Face columns: encrypted=yes, plain=no, embedding=yes
+[2026-02-25 08:08:12] Query: SELECT id, employee_id, fullname, face_template_encrypted, face_embedding FROM employees WHERE face_enrolled = 1 AND status = 'Active'
+[2026-02-25 08:08:12] Enrolled employees found: 7
+[2026-02-25 08:08:12] Checked: 7, Skipped: 0
+[2026-02-25 08:08:12] Best match: Ethan Bailey (EMP047), dist=0.29839753980795
+[2026-02-25 08:08:12] MATCHED: Ethan Bailey (EMP047), dist=0.29839753980795
+[2026-02-25 08:08:12] Looking up shift for employee db_id=7 on date=2026-02-25
+[2026-02-25 08:08:12] Shift found: id=80, date=2026-02-25, type=Afternoon, start=, end=
+[2026-02-25 08:08:12] Open attendance record: NONE (will clock in)
+[2026-02-25 08:08:12] === CLOCK IN ===
+[2026-02-25 08:08:12] Clock IN recorded: attendance_id=36

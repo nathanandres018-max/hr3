@@ -2,18 +2,12 @@
 session_start();
 require_once("../includes/db.php");
 
-if (!isset($_SESSION['employee_id']) || $_SESSION['role'] !== 'employee') {
-    header("Location: ../login.php");
-    exit();
-}
-
-$employee_id = $_SESSION['employee_id'];
 $fullname = $_SESSION['fullname'] ?? 'Employee';
 $role = $_SESSION['role'] ?? 'employee';
 
 // Fetch employee info (make sure columns exist in your employees table)
 $stmt = $pdo->prepare("SELECT * FROM employees WHERE id = ?");
-$stmt->execute([$employee_id]);
+
 $emp = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // The leave types, now matches your leave_requests.php file:
@@ -28,7 +22,7 @@ $leave_types = [
 $used_leaves = [];
 foreach ($leave_types as $type => $quota) {
     $stmt = $pdo->prepare("SELECT date_from, date_to FROM leave_requests WHERE employee_id = ? AND leave_type = ? AND status = 'approved' AND YEAR(date_from) = YEAR(CURDATE())");
-    $stmt->execute([$employee_id, $type]);
+  
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $days = 0;
     foreach ($rows as $row) {
@@ -40,11 +34,11 @@ foreach ($leave_types as $type => $quota) {
 
 // Get pending requests count and total requests for progress bar
 $stmt = $pdo->prepare("SELECT COUNT(*) FROM leave_requests WHERE employee_id = ? AND status = 'pending'");
-$stmt->execute([$employee_id]);
+
 $pending_count = (int)$stmt->fetchColumn();
 
 $stmt = $pdo->prepare("SELECT COUNT(*) FROM leave_requests WHERE employee_id = ?");
-$stmt->execute([$employee_id]);
+
 $total_requests = (int)$stmt->fetchColumn();
 
 $progress = ($total_requests > 0) ? round(($pending_count / $total_requests) * 100) : 0;
@@ -118,8 +112,8 @@ $progress = ($total_requests > 0) ? round(($pending_count / $total_requests) * 1
           <div class="mb-4">
             <h6 class="text-uppercase px-2 mb-2">Leave Management</h6>
             <nav class="nav flex-column">
-              <a class="nav-link active" href="../employee/leave_requests.php"><ion-icon name="calendar-outline"></ion-icon>Request Leave</a>
-              <a class="nav-link" href="../employee/leave_balance.php"><ion-icon name="calendar-outline"></ion-icon>Leave Balance</a>
+              <a class="nav-link" href="../employee/leave_requests.php"><ion-icon name="calendar-outline"></ion-icon>Request Leave</a>
+              <a class="nav-link active" href="../employee/leave_balance.php"><ion-icon name="calendar-outline"></ion-icon>Leave Balance</a>
               <a class="nav-link" href="../employee/leave_history.php"><ion-icon name="calendar-outline"></ion-icon>Leave History</a>
             </nav>
           </div>
@@ -127,7 +121,7 @@ $progress = ($total_requests > 0) ? round(($pending_count / $total_requests) * 1
             <h6 class="text-uppercase px-2 mb-2">Shift & Schedule</h6>
             <nav class="nav flex-column">
               <a class="nav-link" href="/employee/schedule.php"><ion-icon name="calendar-outline"></ion-icon>My Schedule</a>
-              <a class="nav-link" href="/employee/shift_swap.php"><ion-icon name="swap-horizontal-outline"></ion-icon>Request Shift Swap</a>
+              
             </nav>
           </div>
           <div class="mb-4">

@@ -2,10 +2,12 @@
 session_start();
 require_once("../includes/db.php");
 
-if (!isset($_SESSION['employee_id']) || $_SESSION['role'] !== 'hr_manager') {
-    header("Location: ../login.php");
-    exit();
+// === ANTI-BYPASS: Role enforcement for AJAX endpoint ===
+if (!isset($_SESSION['username']) || empty($_SESSION['username']) || !isset($_SESSION['role']) || $_SESSION['role'] !== 'HR Manager') {
+    http_response_code(403);
+    die("Unauthorized");
 }
+$_SESSION['last_activity'] = time();
 
 $id = $_GET['id'] ?? 0;
 $stmt = $pdo->prepare("
@@ -19,7 +21,7 @@ $ts = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$ts) die("Timesheet not found.");
 
-// Fetch attendance logs for this period
+// Fetch attendance logs for this period using the attendance table structure
 $stmt2 = $pdo->prepare("
     SELECT * FROM attendance
     WHERE employee_id = ? AND date >= ? AND date <= ?
@@ -59,6 +61,8 @@ $logs = $stmt2->fetchAll(PDO::FETCH_ASSOC);
                         <th>Status</th>
                         <th>IP In</th>
                         <th>IP Out</th>
+                        <th>Early Out</th>
+                        <th>For HR Review</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,10 +74,12 @@ $logs = $stmt2->fetchAll(PDO::FETCH_ASSOC);
                         <td><?= htmlspecialchars($log['status']) ?></td>
                         <td><?= htmlspecialchars($log['ip_in'] ?? '') ?></td>
                         <td><?= htmlspecialchars($log['ip_out'] ?? '') ?></td>
+                        <td><?= $log['is_early_out'] ? 'Yes' : 'No' ?><?= $log['early_out_reason'] ? ' - ' . htmlspecialchars($log['early_out_reason']) : '' ?></td>
+                        <td><?= $log['for_hr_review'] ? 'Yes' : 'No' ?></td>
                     </tr>
                 <?php endforeach; ?>
                 <?php if (empty($logs)): ?>
-                    <tr><td colspan="6" class="text-center">No attendance records for this period.</td></tr>
+                    <tr><td colspan="8" class="text-center">No attendance records for this period.</td></tr>
                 <?php endif; ?>
                 </tbody>
             </table>

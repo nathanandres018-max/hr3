@@ -1,0 +1,32 @@
+[2026-02-04 14:20:08] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.3475520668217
+[2026-02-04 14:22:46] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.33043274114011
+[2026-02-04 14:50:48] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.27188120795663
+[2026-02-06 16:17:18] Enrollment rejected: new template too close to existing emp=EMP013 dist=0.31741438097413
+[2026-02-06 16:18:02] Enrollment rejected: new template too close to existing emp=EMP015 dist=0.23539148746986
+[2026-02-06 17:31:25] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.2471490342757
+[2026-02-06 17:36:53] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.23522684094338
+[2026-02-06 17:38:27] Enrollment rejected: new template too close to existing emp=EMP013 dist=0.35011168913501
+[2026-02-06 17:40:26] Enrollment rejected: new template too close to existing emp=EMP013 dist=0.35011168913501
+[2026-02-06 17:40:53] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.25415421293174
+[2026-02-06 17:41:59] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.25415421293174
+[2026-02-06 17:42:01] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.25415421293174
+[2026-02-06 17:42:26] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.29075119173232
+[2026-02-06 18:03:31] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.27988210325712
+[2026-02-06 18:04:09] Enrollment rejected: new template too close to existing emp=EMP013 dist=0.30748129699362
+[2026-02-06 18:04:25] Duplicate threshold exceeded but forceFlag=true; proceeding. Match: {"employee_id":"EMP013","fullname":"William Scott","distance":0.30748129699361737}
+[2026-02-06 18:04:25] Enrollment create (FORCED) successful for EMP047, savedImages=["assets\/images\/faces\/face_EMP047_1770401065_s1.jpg","assets\/images\/faces\/face_EMP047_1770401065_s2.jpg","assets\/images\/faces\/face_EMP047_1770401065_s3.jpg"]
+[2026-02-06 18:05:34] Enrollment create successful for EMP013, savedImages=["assets\/images\/faces\/face_EMP013_1770401134_s1.jpg","assets\/images\/faces\/face_EMP013_1770401134_s2.jpg","assets\/images\/faces\/face_EMP013_1770401134_s3.jpg"]
+[2026-02-07 09:20:53] Enrollment rejected: new template too close to existing emp=EMP010 dist=0.44656478804513
+[2026-02-07 09:21:27] Duplicate threshold exceeded but forceFlag=true; proceeding. Match: {"employee_id":"EMP010","fullname":"Amy Clark","distance":0.4465647880451342}
+[2026-02-07 09:21:27] Enrollment create (FORCED) successful for EMP042, savedImages=["assets\/images\/faces\/face_EMP042_1770456087_s1.jpg","assets\/images\/faces\/face_EMP042_1770456087_s2.jpg","assets\/images\/faces\/face_EMP042_1770456087_s3.jpg"]
+[2026-02-07 09:52:07] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.20218203403359
+[2026-02-07 20:52:22] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.15787670668064
+[2026-02-08 05:34:28] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.19706194052007
+[2026-02-08 05:35:08] Enrollment rejected: new template too close to existing emp=EMP013 dist=0.2325201614905
+[2026-02-08 05:35:40] Enrollment rejected: new template too close to existing emp=EMP015 dist=0.44899138822992
+[2026-02-08 05:36:41] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.37862596018625
+[2026-02-08 05:37:28] Enrollment rejected: new template too close to existing emp=EMP010 dist=0.26447515738473
+[2026-02-08 05:39:26] Enrollment create successful for EMP047, savedImages=["assets\/images\/faces\/face_EMP047_1770529166_s1.jpg","assets\/images\/faces\/face_EMP047_1770529166_s2.jpg","assets\/images\/faces\/face_EMP047_1770529166_s3.jpg"]
+[2026-02-08 05:40:07] Enrollment create successful for EMP047, savedImages=["assets\/images\/faces\/face_EMP047_1770529207_s1.jpg","assets\/images\/faces\/face_EMP047_1770529207_s2.jpg","assets\/images\/faces\/face_EMP047_1770529207_s3.jpg"]
+[2026-02-25 06:15:03] Enrollment create successful for EMP047, savedImages=["assets\/images\/faces\/face_EMP047_1772000103_s1.jpg","assets\/images\/faces\/face_EMP047_1772000103_s2.jpg","assets\/images\/faces\/face_EMP047_1772000103_s3.jpg"]
+[2026-02-26 03:21:30] Enrollment rejected: new template too close to existing emp=EMP047 dist=0.28964210452921
